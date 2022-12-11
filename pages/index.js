@@ -70,11 +70,12 @@ export default function Home() {
         <Flex direction={'column'} w="20%" gap={2}>
           <Button
             as={Link}
-            href="/"
+            href="https://github.com/AgustinBN"
             gap={1}
             size={{ base: 'xs', md: 'sm' }}
             colorScheme={'purple'}
             variant="ghost"
+            target={'_blank'}
           >
             <Icon as={AiFillGithub} />
             Github
@@ -82,11 +83,12 @@ export default function Home() {
 
           <Button
             as={Link}
-            href="/"
+            href="https://twitter.com/AgustinBN_"
             gap={1}
             size={{ base: 'xs', md: 'sm' }}
             colorScheme={'purple'}
             variant="ghost"
+            target={'_blank'}
           >
             <Icon as={AiFillTwitterCircle} />
             Twitter
@@ -94,11 +96,12 @@ export default function Home() {
 
           <Button
             as={Link}
-            href="/"
+            href="https://www.instagram.com/agusbianchiii/"
             gap={1}
             size={{ base: 'xs', md: 'sm' }}
             colorScheme={'purple'}
             variant="ghost"
+            target={'_blank'}
           >
             <Icon as={AiFillInstagram} />
             Instagram
