@@ -1,7 +1,7 @@
 ## <@AgustinBN> Homepage
 
 > You&apos;re welcome to my homepage!
-[https://www.agustinbn.com/](https:/www.agustinbn.com/)
+[https://agustinbn.vercel.app/](https://agustinbn.vercel.app/)
 
 ## Preview
 
