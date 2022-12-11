@@ -66,7 +66,7 @@ export default function Navbar({ props }) {
         >
           <NavbarLink href={'/works'}>Works</NavbarLink>
           <NavbarLink
-            href={'https://github.com/AgustinBN'}
+            href={'https://github.com/AgustinBN/next-chakra-homepage'}
             _blank
             display="flex"
             alignItems="center"
@@ -88,7 +88,7 @@ export default function Navbar({ props }) {
                   <NavbarLink href={'/works'}>Works</NavbarLink>
                 </MenuItem>
                 <MenuItem bg="#0e1012">
-                  <NavbarLink href={'https://github.com/AgustinBN'} _blank>
+                  <NavbarLink href={'https://github.com/AgustinBN/next-chakra-homepage'} _blank>
                     Source Code
                   </NavbarLink>
                 </MenuItem>
