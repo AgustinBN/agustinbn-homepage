@@ -3,7 +3,6 @@ import {
   Box,
   Button,
   Text,
-  Icon,
   useColorModeValue,
   Spinner
 } from '@chakra-ui/react'

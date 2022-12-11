@@ -21,7 +21,7 @@ const social = [
   }
 ]
 
-function SocialButtons() {
+export default function SocialButtons() {
   const SHOW_SOCIAL_LINKS = false
   const { toggleColorMode } = useColorMode()
   return (
@@ -30,6 +30,7 @@ function SocialButtons() {
         ? social.map(v => {
             return (
               <IconButton
+                key={v}
                 as="a"
                 href={v.href}
                 target="_blank"
@@ -52,5 +53,3 @@ function SocialButtons() {
     </>
   )
 }
-
-export default SocialButtons
