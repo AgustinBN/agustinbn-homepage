@@ -1,0 +1,30 @@
+{
+  "name": "next-chakra-homepage",
+  "version": "1.0.0",
+  "description": "Homepage",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "prettier": "prettier --write ."
+  },
+  "keywords": [],
+  "author": "Agustín Bianchi<@AgustinBN>",
+  "license": "MIT",
+  "dependencies": {
+    "@chakra-ui/icons": "^2.0.13",
+    "@chakra-ui/react": "^2.4.3",
+    "@emotion/react": "11",
+    "@emotion/styled": "11",
+    "eslint": "^8.29.0",
+    "eslint-config-next": "^13.0.6",
+    "framer-motion": "6",
+    "next": "^13.0.6",
+    "prettier": "^2.8.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.7.1"
+  }
+}
