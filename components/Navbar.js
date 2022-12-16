@@ -83,15 +83,19 @@ export default function Navbar({ props }) {
           <Box display={{ base: 'inline-block', md: 'none' }} ml={2}>
             <Menu>
               <MenuButton as={IconButton} icon={<HamburgerIcon />} size="sm" />
-              <MenuList bg="#0e1012">
-                <MenuItem bg="#0e1012">
+              <MenuList bg={useColorModeValue('#F4F6F7', '#0e1012')}>
+                <MenuItem bg={useColorModeValue('#F4F6F7', '#0e1012')}>
                   <NavbarLink href={'/works'}>Works</NavbarLink>
                 </MenuItem>
-                <MenuItem bg="#0e1012">
+                <MenuItem bg={useColorModeValue('#F4F6F7', '#0e1012')}>
                   <NavbarLink
+                    display={"flex"}
+                    alignItems="center"
+                    gap={2}
                     href={'https://github.com/AgustinBN/next-chakra-homepage'}
                     _blank
                   >
+                    <AiFillGithub />
                     Source Code
                   </NavbarLink>
                 </MenuItem>

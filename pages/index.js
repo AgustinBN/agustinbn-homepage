@@ -31,7 +31,7 @@ export default function Home() {
 
   return (
     <Section>
-      <Astro/>
+      <Astro />
 
       <Part
         textAlign="center"
