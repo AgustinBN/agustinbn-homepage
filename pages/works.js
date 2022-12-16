@@ -3,22 +3,45 @@ import Part from '../components/Part'
 import { SimpleGrid } from '@chakra-ui/react'
 import WorkGrid from '../components/WorkGrid'
 
-// Work Src
+// Works Images
 
-import infames from '../public/works/infames.png'
-import soon from '../public/works/soon.png'
+import infamesImage from '../public/works/infames.png'
+import soonImage from '../public/works/soon.png'
+
+// Works Tables
+
+const MY_WORKS = [
+  {
+    name: 'InfamesRP',
+    disableClick: true,
+    imgSrc: infamesImage,
+    description: 'FiveM <GTA Framework> roleplay server.'
+  },
+
+  {
+    name: 'Coming Soon...',
+    disableClick: true,
+    imgSrc: soonImage,
+    description: 'In a near future...'
+  }
+]
 
 export default function Works() {
   return (
     <Section title="Works">
       <Part title="Works">
         <SimpleGrid columns={[1, 1, 2]} gap={5}>
-          <WorkGrid name="InfamesRP" disableClick imgSrc={infames}>
-            FiveM {'<GTA Framework>'} roleplay server.
-          </WorkGrid>
-          <WorkGrid name="Coming Soon..." disableClick imgSrc={soon}>
-            Next works...
-          </WorkGrid>
+          {MY_WORKS.map(w => {
+            return (
+              <WorkGrid
+                name={w.name}
+                disableClick={w.disableClick}
+                imgSrc={w.imgSrc}
+              >
+                {w.description}
+              </WorkGrid>
+            )
+          })}
         </SimpleGrid>
       </Part>
     </Section>
