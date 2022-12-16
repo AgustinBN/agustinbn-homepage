@@ -37,6 +37,7 @@ export default function Works() {
                 name={w.name}
                 disableClick={w.disableClick}
                 imgSrc={w.imgSrc}
+                key={w}
               >
                 {w.description}
               </WorkGrid>

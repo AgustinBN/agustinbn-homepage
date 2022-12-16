@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import { Box, Text, Spinner } from '@chakra-ui/react'
+import { Box, Spinner } from '@chakra-ui/react'
 
 import astroImage from '../public/astro.png'
 import { useEffect, useState } from 'react'
