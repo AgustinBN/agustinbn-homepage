@@ -1,8 +1,9 @@
 import Head from 'next/head'
 import { Container, Box } from '@chakra-ui/react'
 
-export default function Section({ children, title }) {
-  const NEW_TITLE = title !== undefined ? title + " - <@AgustinBN>" : "<@AgustinBN>"
+export default function Section({ children, title, ...props }) {
+  const NEW_TITLE =
+    title !== undefined ? title + ' - <@AgustinBN>' : '<@AgustinBN>'
   return (
     <Box>
       {NEW_TITLE ? (
@@ -11,7 +12,7 @@ export default function Section({ children, title }) {
           <title>{NEW_TITLE}</title>
         </Head>
       ) : undefined}
-      <Container mt={10} maxW="container.sm">
+      <Container mt={10} maxW="container.sm" {...props}>
         {children}
       </Container>
     </Box>

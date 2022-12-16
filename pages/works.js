@@ -1,35 +1,26 @@
-import NextLink from 'next/link'
-import {
-  Box,
-  Button,
-  Text,
-  useColorModeValue,
-  Spinner
-} from '@chakra-ui/react'
 import Section from '../components/Section'
+import Part from '../components/Part'
+import { SimpleGrid } from '@chakra-ui/react'
+import WorkGrid from '../components/WorkGrid'
 
-export default function _404() {
+// Work Src
+
+import infames from '../public/works/infames.png'
+import soon from '../public/works/soon.png'
+
+export default function Works() {
   return (
-    <Section title="Error 404">
-      <Box
-        display="flex"
-        flexDirection={'column'}
-        border={'2px'}
-        borderColor={useColorModeValue('blackAlpha.100', 'whiteAlpha.200')}
-        mt={'50%'}
-        p={2}
-        gap={5}
-        alignItems="center"
-        justifyContent="center"
-      >
-        <Spinner size="lg" mt={5} />
-        <Text fontWeight={'500'} textAlign={{ base: 'center', md: 'initial' }}>
-          In progress....
-        </Text>
-        <Button as={NextLink} href="/" size="sm">
-          Volver
-        </Button>
-      </Box>
+    <Section title="Works">
+      <Part title="Works">
+        <SimpleGrid columns={[1, 1, 2]} gap={5}>
+          <WorkGrid name="InfamesRP" disableClick imgSrc={infames}>
+            FiveM {'<GTA Framework>'} roleplay server.
+          </WorkGrid>
+          <WorkGrid name="Coming Soon..." disableClick imgSrc={soon}>
+            Next works...
+          </WorkGrid>
+        </SimpleGrid>
+      </Part>
     </Section>
   )
 }
