@@ -89,7 +89,7 @@ export default function Navbar({ props }) {
                 </MenuItem>
                 <MenuItem bg={useColorModeValue('#F4F6F7', '#0e1012')}>
                   <NavbarLink
-                    display={"flex"}
+                    display={'flex'}
                     alignItems="center"
                     gap={2}
                     href={'https://github.com/AgustinBN/next-chakra-homepage'}
