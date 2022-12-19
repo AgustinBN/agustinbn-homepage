@@ -13,18 +13,15 @@ export default function _404() {
         borderColor={useColorModeValue('blackAlpha.100', 'whiteAlpha.200')}
         mt={'50%'}
         py={2}
+        gap={3}
         alignItems="center"
         justifyContent="center"
       >
         <Icon as={TbError404} boxSize={10} />
-        <Text
-          ml={5}
-          fontWeight={'500'}
-          textAlign={{ base: 'center', md: 'initial' }}
-        >
+        <Text fontWeight={'500'} textAlign={{ base: 'center', md: 'initial' }}>
           You&apos;re in a undefined page.
         </Text>
-        <Button as={NextLink} href="/" m={5} size="sm">
+        <Button as={NextLink} href="/" size="sm">
           Volver
         </Button>
       </Box>
