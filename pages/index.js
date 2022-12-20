@@ -65,7 +65,7 @@ export default function Home() {
 
       <Part title={'Fan Of'}>
         <Text fontSize={{ base: 'xs', md: 'md' }}>
-          Football / Techonolgy / Time with Friends / Music / Mate{' '}
+          Football / Techonolgy / Time with Friends / Music
         </Text>
       </Part>
 

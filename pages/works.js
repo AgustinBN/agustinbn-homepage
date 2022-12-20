@@ -7,6 +7,7 @@ import WorkGrid from '../components/WorkGrid'
 
 import infamesImage from '../public/works/infames.png'
 import soonImage from '../public/works/soon.png'
+import Astro from '../components/Astro'
 
 // Works Tables
 
@@ -29,6 +30,7 @@ const MY_WORKS = [
 export default function Works() {
   return (
     <Section title="Works">
+      <Astro />
       <Part title="Works">
         <SimpleGrid columns={[1, 1, 2]} gap={5}>
           {MY_WORKS.map(w => {
