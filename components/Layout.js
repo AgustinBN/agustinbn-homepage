@@ -8,7 +8,7 @@ export default function Main({ children }) {
     <Box as="main" pb={10}>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>{'<@AgustinBN>'} - Homepage</title>
+        <title>{'AgustinBN'} - Homepage</title>
       </Head>
 
       <Navbar />

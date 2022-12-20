@@ -12,7 +12,6 @@ export default function WorkGrid({ children, name, imgSrc, disableClick }) {
         <Image
           src={imgSrc}
           alt={name}
-          className="grid-item-thumbnail"
           placeholder="blur"
           style={{
             objectFit: 'cover',
@@ -23,8 +22,8 @@ export default function WorkGrid({ children, name, imgSrc, disableClick }) {
           }}
           textAlign="center"
         />
-        <LinkOverlay as={NextLink} href={`/works/${name}`}>
-          <Text mt={2} fontSize={20}>
+        <LinkOverlay as={NextLink} href={`/works/${name.toLowerCase()}`}>
+          <Text mt={2} fontSize={20} fontWeight="500">
             {name}
           </Text>
         </LinkOverlay>

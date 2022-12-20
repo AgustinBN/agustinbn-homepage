@@ -2,8 +2,7 @@ import Head from 'next/head'
 import { Container, Box } from '@chakra-ui/react'
 
 export default function Section({ children, title, ...props }) {
-  const NEW_TITLE =
-    title !== undefined ? title + ' - <@AgustinBN>' : '<@AgustinBN>'
+  const NEW_TITLE = title !== undefined ? title + ' - AgustinBN' : 'AgustinBN'
   return (
     <Box>
       {NEW_TITLE ? (

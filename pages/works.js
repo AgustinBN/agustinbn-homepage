@@ -13,7 +13,7 @@ import soonImage from '../public/works/soon.png'
 const MY_WORKS = [
   {
     name: 'InfamesRP',
-    disableClick: true,
+    disableClick: false,
     imgSrc: infamesImage,
     description: 'FiveM <GTA Framework> roleplay server.'
   },
