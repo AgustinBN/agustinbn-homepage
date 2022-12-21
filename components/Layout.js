@@ -9,6 +9,7 @@ export default function Main({ children }) {
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>{'AgustinBN'} - Homepage</title>
+        <script defer src="https://app.embed.im/snow.js" />
       </Head>
 
       <Navbar />
