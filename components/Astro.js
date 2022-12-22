@@ -21,8 +21,8 @@ export default function Astro() {
     <Box
       display="flex"
       justifyContent="center"
-      py={5}
       w="100%"
+      mt={16}
       alignItems="center"
     >
       {loaded ? (

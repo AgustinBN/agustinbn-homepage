@@ -15,7 +15,6 @@ import {
   AiFillInstagram,
   AiFillTwitterCircle
 } from 'react-icons/ai'
-import Astro from '../components/Astro'
 
 export default function Home() {
   const GridTime = ({ year = '2000', children }) => {
@@ -31,8 +30,6 @@ export default function Home() {
 
   return (
     <Section>
-      <Astro />
-
       <Part
         textAlign="center"
         fontSize={{ base: 'sm', md: 'md' }}
