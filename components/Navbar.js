@@ -1,4 +1,5 @@
 import NextLink from 'next/link'
+import { useRouter } from 'next/router'
 import {
   Box,
   Container,
@@ -17,6 +18,8 @@ import Logo from './Logo'
 import SocialButtons from './SocialButtons'
 
 const NavbarLink = ({ href, children, _blank = false, ...props }) => {
+  const { pathname } = useRouter()
+  const isActive = pathname === href
   return (
     <Link
       as={NextLink}
@@ -24,9 +27,13 @@ const NavbarLink = ({ href, children, _blank = false, ...props }) => {
       passHref
       target={_blank ? '_blank' : undefined}
       fontWeight={500}
-      opacity=".7"
       scroll={false}
+      color={useColorModeValue('blackAlpha.800', 'whiteAlpha.700')}
       _hover={{ opacity: '.9', transition: '300ms' }}
+      textDecoration={isActive ? 'underline' : undefined}
+      textDecorationColor={isActive ? 'purple.500' : undefined}
+      textDecorationThickness={isActive ? 4 : undefined}
+      textUnderlineOffset={isActive ? 5 : undefined}
       {...props}
     >
       {children}
@@ -47,7 +54,7 @@ export default function Navbar({ props }) {
     >
       <Container
         display="flex"
-        p={3}
+        p={2}
         maxW="container.md"
         wrap="wrap"
         align="center"

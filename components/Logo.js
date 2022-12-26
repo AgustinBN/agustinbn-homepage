@@ -1,5 +1,6 @@
 import NextLink from 'next/link'
-import { Box, Image, Text } from '@chakra-ui/react'
+import { Box, Icon, Text } from '@chakra-ui/react'
+import { FaUserAstronaut } from 'react-icons/fa'
 
 export default function Logo() {
   return (
@@ -11,13 +12,13 @@ export default function Logo() {
       justifyContent="center"
       mr={5}
     >
-      <Image
-        borderRadius="full"
-        boxSize="30px"
-        src={
-          'https://upload.wikimedia.org/wikipedia/commons/d/db/Zeronet_logo.png?20160308165539'
-        }
-        alt="Dan Abramov"
+      <Icon
+        as={FaUserAstronaut}
+        color={'purple.500'}
+        _hover={{
+          transform: 'rotate(30deg)',
+          transition: '300ms'
+        }}
       />
       <Text fontWeight="bold" ml={2} color="alicewhite">
         AgustinBN

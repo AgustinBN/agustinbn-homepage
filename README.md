@@ -12,7 +12,7 @@
 ##### Run those commands in you terminal.
 
 ```cmd
-  yarn build && yarn dev
+  yarn install && yarn dev
 ```
 
 ## Stack
