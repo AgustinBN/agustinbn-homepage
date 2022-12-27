@@ -1,14 +1,7 @@
 import Section from '../components/Section'
-import {
-  Grid,
-  GridItem,
-  Text,
-  Badge,
-  Flex,
-  Button,
-  Icon
-} from '@chakra-ui/react'
+import { Grid, Text, Flex, Button, Icon } from '@chakra-ui/react'
 import Part from '../components/Part'
+import GridTime from '../components/TimeGrid'
 import Link from 'next/link'
 import {
   AiFillGithub,
@@ -17,17 +10,6 @@ import {
 } from 'react-icons/ai'
 
 export default function Home() {
-  const GridTime = ({ year = '2000', children }) => {
-    return (
-      <GridItem w="100%" p={2} display="flex" alignItems="center">
-        <Badge colorScheme="purple" mr={2} fontSize={{ base: 'xs', md: 'sm' }}>
-          {year}
-        </Badge>
-        <Text fontSize={{ base: 'xs', md: 'sm' }}>{children}</Text>
-      </GridItem>
-    )
-  }
-
   return (
     <Section>
       <Part

@@ -28,14 +28,15 @@ export default function SocialButtons() {
     <>
       {SHOW_SOCIAL_LINKS
         ? social.map(v => {
+            const { href, icon } = v
             return (
               <IconButton
                 key={v}
                 as="a"
-                href={v.href}
+                href={href}
                 target="_blank"
                 aria-label="Search database"
-                icon={v.icon}
+                icon={icon}
                 size="sm"
                 mr={2}
               />
