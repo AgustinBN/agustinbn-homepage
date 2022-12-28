@@ -1,19 +1,11 @@
 import NextLink from 'next/link'
 import Image from 'next/image'
-import {
-  Button,
-  Box,
-  Text,
-  UnorderedList,
-  ListItem,
-  Icon
-} from '@chakra-ui/react'
+import { Button, Box, Text, UnorderedList, ListItem } from '@chakra-ui/react'
 import Section from '../../components/Section'
 import Part from '../../components/Part'
-
+import DevLink from '../../components/DevLink'
 // Utils
 
-import { AiFillTwitterCircle } from 'react-icons/ai'
 import infamesImage from '../../public/works/infames2.png'
 
 const TEAM = [
@@ -46,23 +38,6 @@ const TEAM = [
 ]
 
 export default function InfamesRP() {
-  const DevLink = ({ twitter, children, colour = 'purple' }) => {
-    return (
-      <Button
-        as={NextLink}
-        href={`https://twitter.com/${twitter}`}
-        gap={1}
-        size={{ base: 'xs', md: 'sm' }}
-        colorScheme={colour}
-        variant="outline"
-        target={'_blank'}
-      >
-        <Icon as={AiFillTwitterCircle} />
-        {children}
-      </Button>
-    )
-  }
-
   return (
     <Section title={'InfamesRP'}>
       <Part title={`InfamesRP`} date="2021">
@@ -89,10 +64,11 @@ export default function InfamesRP() {
         </Box>
         <UnorderedList spacing={3} m={2} listStyleType="none">
           {TEAM.map(v => {
+            const { twitter, colour, rank, name } = v
             return (
               <ListItem key={v}>
-                <DevLink twitter={v.twitter} colour={v.colour || 'purple'}>
-                  {v.rank ? v.name + ` <${v.rank}>` : v.name}
+                <DevLink twitter={twitter} colour={colour || 'purple'}>
+                  {rank ? name + ` <${rank}>` : name}
                 </DevLink>
               </ListItem>
             )
