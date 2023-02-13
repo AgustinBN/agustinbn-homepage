@@ -7,6 +7,9 @@ const theme = extendTheme({
     useSystemColorMode: true,
     disableTransitionOnChange: false
   },
+  fonts: {
+    body: `'Poppins', sans-serif`
+  },
   styles: {
     global: props => ({
       body: {

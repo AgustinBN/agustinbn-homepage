@@ -1,3 +1,4 @@
+import '@fontsource/poppins'
 import Chakra from '../components/Chakra'
 import Layout from '../components/Layout'
 
