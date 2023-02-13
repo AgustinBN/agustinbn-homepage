@@ -54,7 +54,7 @@ export default function Navbar({ props }) {
     >
       <Container
         display="flex"
-        p={2}
+        p={5}
         maxW="container.md"
         wrap="wrap"
         align="center"
