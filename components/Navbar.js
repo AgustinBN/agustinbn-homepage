@@ -14,8 +14,7 @@ import {
 } from '@chakra-ui/react'
 import { AiFillGithub } from 'react-icons/ai'
 import { HamburgerIcon } from '@chakra-ui/icons'
-import Logo from './Logo'
-import SocialButtons from './SocialButtons'
+import { Logo, SocialButtons} from './'
 
 const NavbarLink = ({ href, children, _blank = false, ...props }) => {
   const { pathname } = useRouter()

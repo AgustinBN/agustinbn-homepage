@@ -1,7 +1,7 @@
 import NextLink from 'next/link'
 import { Box, Button, Text, Icon, useColorModeValue } from '@chakra-ui/react'
 import { TbError404 } from 'react-icons/tb'
-import Section from '../components/Section'
+import { Section } from '../components'
 
 export default function _404() {
   return (

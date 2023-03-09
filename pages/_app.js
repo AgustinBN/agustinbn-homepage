@@ -1,6 +1,5 @@
 import '@fontsource/poppins'
-import Chakra from '../components/Chakra'
-import Layout from '../components/Layout'
+import { Chakra, Layout } from '../components'
 
 export default function App({ Component, pageProps }) {
   return (

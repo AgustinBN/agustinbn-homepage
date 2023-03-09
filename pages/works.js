@@ -1,7 +1,5 @@
-import Section from '../components/Section'
-import Part from '../components/Part'
 import { SimpleGrid } from '@chakra-ui/react'
-import WorkGrid from '../components/WorkGrid'
+import { Section, Part, WorkGrid } from '../components'
 
 // Works Images
 

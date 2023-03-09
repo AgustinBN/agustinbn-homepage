@@ -1,8 +1,5 @@
-import Section from '../components/Section'
-import { Grid, Text, Flex, Button, Icon } from '@chakra-ui/react'
-import Part from '../components/Part'
-import GridTime from '../components/TimeGrid'
-import Link from 'next/link'
+import { Grid, Text, Flex } from '@chakra-ui/react'
+import { Section, Part, TimeGrid, ContactButton } from '../components'
 import {
   AiFillGithub,
   AiFillInstagram,
@@ -22,23 +19,24 @@ export default function Home() {
 
       <Part title={'Timeline'}>
         <Grid templateColumns="repeat(1, 1fr)" gap={0.2}>
-          <GridTime year="2006">
+          <TimeGrid year="2006">
             I was born in Argentina, Buenos Aires.
-          </GridTime>
-          <GridTime year="2019">
-            I&apos;ve started the secondary schoool.
-          </GridTime>
-          <GridTime year="2020">
+          </TimeGrid>
+          <TimeGrid year="2019">
+            I&apos;ve started the secondary school.
+          </TimeGrid>
+          <TimeGrid year="2020">
             COVID-19 made us all stay in our home. I became interested in the
             development of FiveM servers.
-          </GridTime>
-          <GridTime year="2021">
+          </TimeGrid>
+          <TimeGrid year="2021">
             I was involved in the developtment of a FiveM server called
             InfamesRP.
-          </GridTime>
-          <GridTime year="2022">
-            I&apos;m learning and focusing Chakra-UI and Next.js.
-          </GridTime>
+          </TimeGrid>
+          <TimeGrid year="2022">
+            I&apos;ve learnt many front-end technologies, e.g: Tailwind CSS,
+            Chakra UI, etc..
+          </TimeGrid>
         </Grid>
       </Part>
 
@@ -50,44 +48,9 @@ export default function Home() {
 
       <Part title={'Contact'}>
         <Flex direction={'column'} w="20%" gap={2}>
-          <Button
-            as={Link}
-            href="https://github.com/AgustinBN"
-            gap={1}
-            size={{ base: 'xs', md: 'sm' }}
-            colorScheme={'purple'}
-            variant="ghost"
-            target={'_blank'}
-          >
-            <Icon as={AiFillGithub} />
-            Github
-          </Button>
-
-          <Button
-            as={Link}
-            href="https://twitter.com/AgustinBN_"
-            gap={1}
-            size={{ base: 'xs', md: 'sm' }}
-            colorScheme={'purple'}
-            variant="ghost"
-            target={'_blank'}
-          >
-            <Icon as={AiFillTwitterCircle} />
-            Twitter
-          </Button>
-
-          <Button
-            as={Link}
-            href="https://www.instagram.com/agusbianchiii/"
-            gap={1}
-            size={{ base: 'xs', md: 'sm' }}
-            colorScheme={'purple'}
-            variant="ghost"
-            target={'_blank'}
-          >
-            <Icon as={AiFillInstagram} />
-            Instagram
-          </Button>
+          <ContactButton icon={AiFillGithub}>Github</ContactButton>
+          <ContactButton icon={AiFillTwitterCircle}>Twitter</ContactButton>
+          <ContactButton icon={AiFillInstagram}>Instagram</ContactButton>
         </Flex>
       </Part>
     </Section>

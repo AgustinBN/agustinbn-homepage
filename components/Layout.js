@@ -1,8 +1,6 @@
 import Head from 'next/head'
 import { Box, Container } from '@chakra-ui/react'
-import Navbar from './Navbar'
-import Footer from './Footer'
-import Astro from './Astro'
+import { Navbar, Footer, Astro } from './'
 
 export default function Main({ children }) {
   return (
