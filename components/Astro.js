@@ -9,13 +9,10 @@ export default function Astro() {
   const [loaded, setLoaded] = useState(false)
 
   useEffect(() => {
-    setTimeout(
-      () => {
-        setLoaded(true)
-      },
-      pathname === '/works' ? 0 : 200
-    )
-  })
+    setTimeout(() => {
+      setLoaded(true)
+    }, 200)
+  }, [pathname])
 
   return (
     <Box
