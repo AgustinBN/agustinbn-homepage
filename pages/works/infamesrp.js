@@ -1,9 +1,8 @@
 import NextLink from 'next/link'
 import Image from 'next/image'
 import { Button, Box, Text, UnorderedList, ListItem } from '@chakra-ui/react'
-import Section from '../../components/Section'
-import Part from '../../components/Part'
-import DevLink from '../../components/DevLink'
+import { Section, Part, DevLink } from '../../components'
+
 // Utils
 
 import infamesImage from '../../public/works/infames2.png'
