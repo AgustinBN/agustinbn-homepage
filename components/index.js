@@ -11,6 +11,7 @@ import Section from './Section'
 import SocialButtons from './SocialButtons'
 import TimeGrid from './TimeGrid'
 import WorkGrid from './WorkGrid'
+import ScrollGuide from './ScrollProgress'
 
 export {
   Astro,
@@ -25,5 +26,6 @@ export {
   Section,
   SocialButtons,
   TimeGrid,
-  WorkGrid
+  WorkGrid,
+  ScrollGuide
 }

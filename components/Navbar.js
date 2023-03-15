@@ -14,7 +14,9 @@ import {
 } from '@chakra-ui/react'
 import { AiFillGithub } from 'react-icons/ai'
 import { HamburgerIcon } from '@chakra-ui/icons'
-import { Logo, SocialButtons } from './'
+import { Logo, ScrollGuide, SocialButtons } from './'
+
+const ENABLED_SCROLL_GUIDE = false
 
 const NavbarLink = ({ href, children, _blank = false, ...props }) => {
   const { pathname } = useRouter()
@@ -110,6 +112,7 @@ export default function Navbar({ props }) {
           </Box>
         </Box>
       </Container>
+      {ENABLED_SCROLL_GUIDE && <ScrollGuide />}
     </Box>
   )
 }
