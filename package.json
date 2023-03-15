@@ -8,8 +8,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "prettier": "prettier --write .",
-    "prepare": "husky install"
+    "prettier": "prettier --write ."
   },
   "keywords": [],
   "author": "Agustín Bianchi<@AgustinBN>",
@@ -28,8 +27,5 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.7.1"
-  },
-  "devDependencies": {
-    "husky": "^7.0.0"
   }
 }
