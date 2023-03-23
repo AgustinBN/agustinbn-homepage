@@ -1,25 +1,31 @@
-## <@AgustinBN> Homepage
 
-> You&apos;re welcome to my homepage!
-> [https://agustinbn.vercel.app/](https://agustinbn.vercel.app/)
+## AgustinBN - Homepage 👨‍🚀
 
-## Preview
-
-[![Prewiew thumbnail](./public/preview.png)](https:/www.agustinbn.com/)
-
-## Installation
-
-##### Run those commands in you terminal.
-
-```cmd
-  yarn install && yarn dev
-```
+[https://agustinbn.vercel.app/](https://agustinbn.vercel.app/)
 
 ## Stack
 
-- [Next.js](https://nextjs.org/) - A React framework with hybrid static & server rendering, and route pre-fetching, etc.
 - [Chakra UI](https://chakra-ui.com/) - A simple, modular and accessible component library for React
-- [Styled](https://www.npmjs.com/package/@emotion/styled/) - A performant and flexible CSS-in-JS library
+
+- [Next.js](https://nextjs.org/) - A React framework with hybrid static & server rendering, and route pre-fetching, etc.
+
+- [Framer Motion](https://www.framer.com/motion/) - Animations Library
+
+- [React Icons](https://github.com/AgustinBN/next-chakra-homepage/edit/master/README.md) - Icons Library
+
+##  Project Tree
+
+```
+$PROJECT_ROOT
+│ # Page Files
+├── pages
+│ # React Components
+├── components
+│ # Helpful Components
+├── utils
+│ # Static files
+└── public
+```
 
 ## License
 
