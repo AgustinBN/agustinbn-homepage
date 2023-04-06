@@ -11,6 +11,9 @@ const ContactButton = ({ icon, children }) => {
       colorScheme={'purple'}
       variant="ghost"
       target={'_blank'}
+      _hover={{
+        textDecoration: 'none'
+      }}
     >
       <Icon as={icon} />
       {children}

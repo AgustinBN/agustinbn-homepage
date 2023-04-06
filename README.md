@@ -1,4 +1,3 @@
-
 ## AgustinBN - Homepage 👨‍🚀
 
 [https://agustinbn.vercel.app/](https://agustinbn.vercel.app/)
@@ -13,7 +12,7 @@
 
 - [React Icons](https://github.com/AgustinBN/next-chakra-homepage/edit/master/README.md) - Icons Library
 
-##  Project Tree
+## Project Tree
 
 ```
 $PROJECT_ROOT
